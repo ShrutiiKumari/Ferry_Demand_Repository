@@ -12,11 +12,31 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown(""""
+<style>
+
+/* Metric Box */
+[data-testid="stMetric"] {
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Metric Title */
+[data-testid="stTitle"] {
+    color: #009933;
+    font-size: 30px;
+    font-weight: bold;
+}
+</style>
+""", unsafe_allow_html=True)
 
 page_bg = """
 <style>
 .stApp {
-    background: linear_gradient(135deg, #e0f7fa, #e1hee7);
+    background: linear-gradient(135deg, #e0f7fa, #e1eef7);
     background-size: cover;
     background-attachment: fixed;
 }
