@@ -65,9 +65,7 @@ st.write("Comparison of Naïve Forecast, Moving Average, and Linear Regression")
 # Load Dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv(
-        r"C:\Users\hp\PycharmProjects\Ferry_Demand_Repository\data\ferryticketdata.csv"
-    )
+    return pd.read_csv("data/ferryticketdata.csv")
 
 df = load_data()
 
